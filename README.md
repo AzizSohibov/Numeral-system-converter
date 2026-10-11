@@ -1,5 +1,44 @@
 # 🔢 Numeral System Odometer Converter
 
+An interactive web application styled like a classic mechanical odometer that synchronizes and converts values between four numeral systems in real time.
+
+🌐 **Live Demo:** [GitHub Pages](https://AzizSohibov.github.io/Numeral-system-converter/)
+
+---
+
+## ✨ Features
+
+* **Mechanical Drum Animation:** Smooth vertical scrolling (`translateY` + cubic-bezier easing) simulating physical number drums.
+* **Instant Multi-System Synchronization:** Supports four numeral systems simultaneously:
+  * **Hex** (Base 16) — 4 digits
+  * **Decimal** (Base 10) — 6 digits
+  * **Octal** (Base 8) — 6 digits
+  * **Binary** (Base 2) — 12 digits
+* **Interactive Input Fields:** Real-time validation and cross-conversion. Changing a value in any system instantly updates all other counters.
+* **Modern UI/UX:** Dark technological theme, recessed odometer windows, and smooth hover effects.
+
+---
+
+## 🛠️ Tech Stack
+
+Built with vanilla web technologies (no external libraries or frameworks required):
+* **HTML5** — Semantic markup.
+* **CSS3** (Flexbox, Grid, Transitions, Custom Properties) — Styling and animations.
+* **JavaScript (ES6+)** — Conversion logic, input validation, and DOM manipulation.
+
+---
+
+## 🚀 Local Installation
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/AzizSohibov/Numeral-system-converter.git](https://github.com/AzizSohibov/Numeral-system-converter.git)
+
+   
+🇷🇺 Описание на русском:
+
+# 🔢 Numeral System Odometer Converter
+
 Интерактивное веб-приложение в стиле ретро-механического счетчика (одометра), которое в реальном времени синхронизирует и конвертирует значения между четырьмя популярными системами счисления.
 
 🌐 **Посмотреть сайт вживую:** [GitHub Pages](https://AzizSohibov.github.io/Numeral-system-converter/)
