@@ -1,0 +1,146 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0f111a;
+            color: #e1e1e6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            color: #00ffcc;
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .counter-card {
+            background: #1a1d2d;
+            border: 2px solid #2a2e43;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .counter-card:hover {
+            transform: translateY(-5px);
+            border-color: #00ffcc;
+        }
+
+        .counter-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #8a8f9d;
+            margin-bottom: 12px;
+        }
+
+        /* Окно счетчика в стиле счетчика воды */
+        .odometer-window {
+            background: #08090e;
+            border: 3px inset #333954;
+            border-radius: 6px;
+            padding: 10px 15px;
+            display: flex;
+            gap: 6px;
+            box-shadow: inset 0 5px 10px rgba(0,0,0,0.8);
+            min-height: 70px;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        /* Отдельный цифровой барабан */
+        .digit-drum {
+            position: relative;
+            width: 28px;
+            height: 44px;
+            background: #141722;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+        }
+
+        .digit-track {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .digit {
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #00ffcc;
+            text-shadow: 0 0 5px rgba(0, 255, 204, 0.5);
+        }
+
+        /* Поле ввода для каждого счетчика */
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 5px;
+        }
+
+        .input-group label {
+            font-size: 0.75rem;
+            color: #8a8f9d;
+        }
+
+        .input-group input {
+            background: #08090e;
+            border: 1px solid #333954;
+            border-radius: 6px;
+            padding: 8px 12px;
+            color: #00ffcc;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .input-group input:focus {
+            border-color: #00ffcc;
+            box-shadow: 0 0 5px rgba(0, 255, 204, 0.2);
+        }
+
+        .hint {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #8a8f9d;
+            text-align: center;
+        }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивные счетчики систем счисления</title>
+  </head>
+  <body>
+<h1>СЧЕТЧИК СИСТЕМ СЧИСЛЕНИЯ</h1>
+
+    <div class="container">
+        <!-- 16-ричная -->
+        <div class="counter-card">
+            <div class="counter-title">Hex (16-ричная)</div>
+            <div class="odometer-window" id="hex-counter"></div>
+            <div class="input-group">
+                <label>Значение (Hex):</label>
+                <input type="text" id="hex-input" placeholder="0-9, A-F">
+            </div>
+        </div>
+
+        <!-- 10-чная -->
+        <div class="counter-card">
+            <div class="counter-title">Decimal (10-чная)</div>
+            <div class="odometer-window" id="dec-counter"></div>
+            <div class="input-group">
+                <label>Значение (Decimal):</label>
+                <input type="text" id="dec-input" placeholder="0-9">
+            </div>
+        </div>
+
+        <!-- 8-ричная -->
+        <div class="counter-card">
+            <div class="counter-title">Octal (8-ричная)</div>
+            <div class="odometer-window" id="oct-counter"></div>
+            <div class="input-group">
+                <label>Значение (Octal):</label>
+                <input type="text" id="oct-input" placeholder="0-7">
+            </div>
+        </div>
+
+        <!-- Двоичная -->
+        <div class="counter-card">
+            <div class="counter-title">Binary (Двоичная)</div>
+            <div class="odometer-window" id="bin-counter"></div>
+            <div class="input-group">
+                <label>Значение (Binary):</label>
+                <input type="text" id="bin-input" placeholder="0-1">
+            </div>
+        </div>
+    </div>
+
+    <div class="hint">Введите число в любое поле — остальные счетчики обновятся автоматически.</div>
+    <script src="./script.js"></script>
+  </body>
+</html>
