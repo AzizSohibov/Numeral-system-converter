@@ -34,8 +34,12 @@ Built with vanilla web technologies (no external libraries or frameworks require
    ```bash
    git clone [https://github.com/AzizSohibov/Numeral-system-converter.git](https://github.com/AzizSohibov/Numeral-system-converter.git)
 
+---
+
+---
+
    
-🇷🇺 Описание на русском:
+# 🇷🇺 Описание на русском:
 
 # 🔢 Numeral System Odometer Converter
 
